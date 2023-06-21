@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=inp, initial-scale=1.0">
+    <title>Document</title>
+    <script src="juego.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="container">
+        <div class="hijo">
+            <div class="personaje1">
+                <div class="personaje">
+                    <img id="orco" src="img/orco.gif" alt="jugador numero 1">
+                </div>
+                <div class="ataquesDiv" id="ataquesDiv">
+                    <button value="agua" onclick="ataque('agua');"><img class="ataques" src="img/agua.PNG" alt=""></button>
+                    <button  value="natural" onclick="ataque('natural');"><img class="ataques" src="img/tierra.PNG" alt=""></button>
+                    <button value="fuego" onclick="ataque('fuego');"><img class="ataques" src="img/fuego.PNG" alt=""></button>
+                </div>
+                <div class="defensasDiv" id="defensasDiv">                
+                    <button><img id="agua" class="defensas" src="img/agua.PNG" alt=""></button>
+                    <button><img id="natural" class="defensas" src="img/tierra.PNG" alt=""></button>
+                    <button><img id="fuego" class="defensas" src="img/fuego.PNG" alt=""></button>
+                </div>
+                
+                <div class="vida">
+                    <div>
+                        <label>VIDA</label>
+                    </div>
+                    <div>
+                        <progress class="progress"  id="pro-vida" value="100" max="100"></progress>
+                        <label id="lbl-vidaYo">100</label>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mensajeGolpes">
+                La batalla de los dioses
+            </div>
+            <div dir="rtl" class="personaje2">
+                <div class="personaje">
+                    <img id="paladin" src="img/paladin.gif" alt="jugador numero 1">
+                </div>
+                <button> <img class="ataques" src="img/agua.PNG" alt=""></button>
+                <button> <img class="ataques" src="img/tierra.PNG" alt=""></button>
+                <button> <img class="ataques" src="img/fuego.PNG" alt=""></button>
+                <div  class="vida">
+                    <div>
+                        <label>VIDA</label>
+                    </div>
+                    <div >
+                        <progress class="progress" id="pro-vidaBot" value="100" max="100"></progress>
+                        <label id="lbl-vidaBot">100</label>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        
+        <div class="backIndex">
+            <a href="index.html"> Volver Pagina Principal</a>
+        </div>  
+    </div> 
+</body>
+</html>

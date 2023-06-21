@@ -1,0 +1,133 @@
+body{
+    background-color: #D8530C;
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo{
+    background-color: rgb(121, 98, 70);
+    padding: 35px;
+    height: 10vh;
+    font-size: 30px;    
+    justify-content: center;
+    text-align: center;
+}
+.ebt{
+    background-color: #EF3333;
+    text-align:center;
+    color: #fff;
+    border-radius: 0px 0px 30px 30px;
+    bottom: 0;
+    position: fixed;
+    text-align: center;   
+    padding: 50px;    
+    margin-bottom: 200px;
+    margin-left: 45%;
+}
+
+.ebt:hover ,.backIndex:hover{
+    background-color: rgb(51, 139, 10);
+    opacity: .5;
+    transition: 2s;
+}
+
+
+.cr{
+    margin-bottom: 0%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    height: 10vh;
+    bottom: 0;
+    position: fixed;
+    margin-left: 31%;
+}
+
+.cr:hover{
+   color: rgb(211, 211, 4);
+    opacity: .5;
+    transition: 2s;
+}
+.ataques,.defensas{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.ataques:hover{
+    transform: scale(1.1);
+    transition: transform .3s ease-in-out;
+}
+
+
+.vida{
+    margin-top: 15px;
+    color: #C6F0F1;
+    font-weight: bold;
+}
+
+#paladin{
+    width: 220px;
+    height: 305px;
+}
+
+#container{
+    width: 100%;
+}
+
+.personaje2{
+    float: right;
+}
+
+.personaje1{
+    float: left;
+}
+
+.backIndex{
+    bottom: 0;
+    position: fixed;
+    text-align: center;   
+    padding: 50px;
+    left: 0;
+    width: 200px;
+    background-color: #EF3333;
+    border-radius: 0px 0px 30px 30px;
+    padding: 50px; 
+    margin-left: 40%;
+    color: chartreuse;
+}
+
+.defensasDiv{
+    background-color: #EF3333;
+    display: none;
+}
+
+.mensajeGolpes {
+    
+    color: #5FD229;
+    height: 50vh; /* Ajusta la altura según tus necesidades */
+    top: calc(50% - (50vh / 2)); /* Ajusta el valor para centrar verticalmente */
+    position: fixed;
+    transform: translate(-50%, -50%);
+    animation: palpitacion-anim 2s infinite;
+    display: flex;
+    left: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes palpitacion-anim {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
